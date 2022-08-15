@@ -14,7 +14,7 @@
 </script>
 
 <script>
-  function setColor(color){
+  function LinksSetColor(color){
     var alist = document.querySelectorAll('a');
     var i = 0;
     while(i < alist.length){
@@ -22,20 +22,26 @@
         i = i + 1;
     }
   }
+  function BodySetColor(color){
+    document.querySelector('body').style.color = color;
+  }
+  function BodySetbackgroundColor(color){
+    document.querySelector('body').style.backgroundColor = color;
+  }
   function nightdayHandler(self){
     var target = document.querySelector('body');
     if(self.value === 'night'){
-      target.style.backgroundColor = 'black';
-      target.style.color = 'white';
+      BodySetbackgroundColor('black');
+      BodySetColor('white');
       self.value = 'day';
 
-      setColor('powderblue');
+      LinksSetColor('powderblue');
     } else {
-      target.style.backgroundColor = 'white';
-      target.style.color = 'black';
+      BodySetbackgroundColor('white');
+      BodySetColor('black');
       self.value = 'night';
 
-      setColor('DodgerBlue');
+      LinksSetColor('DodgerBlue');
     }
   }
 </script>

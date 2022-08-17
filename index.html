@@ -13,38 +13,7 @@
   gtag('config', 'G-PL8XN2MNP2');
 </script>
 
-<script>
-  function LinksSetColor(color){
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-        alist[i].style.color = color;
-        i = i + 1;
-    }
-  }
-  function BodySetColor(color){
-    document.querySelector('body').style.color = color;
-  }
-  function BodySetbackgroundColor(color){
-    document.querySelector('body').style.backgroundColor = color;
-  }
-  function nightdayHandler(self){
-    var target = document.querySelector('body');
-    if(self.value === 'night'){
-      BodySetbackgroundColor('black');
-      BodySetColor('white');
-      self.value = 'day';
-
-      LinksSetColor('powderblue');
-    } else {
-      BodySetbackgroundColor('white');
-      BodySetColor('black');
-      self.value = 'night';
-
-      LinksSetColor('DodgerBlue');
-    }
-  }
-</script>
+<script src="colors.js"></script>
 
   <link rel="stylesheet" href="style.css">
 </head>

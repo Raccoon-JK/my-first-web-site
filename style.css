@@ -1,53 +1,49 @@
 body{
   margin:0;
-  }
+}
   a {
     color:DodgerBlue;
     text-decoration: none;
-  }
+}
   h1 {
     font-size:60px;
     text-align: center;
     border-bottom:2px solid black;
     margin:0;
     padding:20px;
-  }
-  ol{
-    font-size:20px;
-    border-right:2px solid black;
-    width:150px;
-    margin:0;
-    padding:20px;
-  }
+}
+  #bodyline{
+    display: grid;
+    grid-template-columns: 275px 1fr;
+}
+  #line{
+  font-size:20px;
+  border-right:2px solid black;
+  width:150px;
+  margin:0;
+  padding:20px;
+}
   .button1{
     background-color: skyblue;
      border: none;
      color: white;
-     padding: 15px 32px;
+     padding: 15px 50px;
      text-align: center;
      text-decoration: none;
      display: inline-block;
      font-size: 16px;
      border-radius: 12px;
-  }
-  #button{
-    display: grid;
-    grid-template-columns: 220px 1fr;
-  }
-  #grid{
-    display: grid;
-    grid-template-columns: 275px 1fr;
-  }
+}
   #grid ol{
     padding-left:50px;
-  }
+}
   @media(max-width:800px){
     #grid{
       display: block;
-  }
+}
   ol{
     border-right:none
-  }
+}
   h1{
     border-bottom:none
   }
